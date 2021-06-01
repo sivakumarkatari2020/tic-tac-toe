@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>simple tic-tac-toe game</title>
+</head>
+<body>
+    <header>
+        <h1>TIC-TAC-TOE</h1>
+        <p>This is a small game consist of 2 players,the first person choice is 'x' and second one will be 'o'</p>
+    </header>
+    <main>
+        <div id="timer">
+            <h2>time :</h2>
+            <div id="time"></div>
+        </div>
+        <div id="main-div" class="main-div">
+            <div id="div1" class="block" onclick="enterVal('div1')">1</div>
+            <div id="div2" class="block" onclick="enterVal('div2')" >2</div>
+            <div id="div3" class="block" onclick="enterVal('div3')">3</div>
+            <div id="div4" class="block" onclick="enterVal('div4')">4</div>
+            <div id="div5" class="block" onclick="enterVal('div5')">5</div>
+            <div id="div6" class="block" onclick="enterVal('div6')">6</div>
+            <div id="div7" class="block" onclick="enterVal('div7')">7</div>
+            <div id="div8" class="block" onclick="enterVal('div8')">8</div>
+            <div id="div9" class="block" onclick="enterVal('div9')">9</div>
+        </div>
+        <input type="button" id="button" value="start" onclick="start()" ondblclick="reset()">
+    </main>
+    <footer>
+        <p>Thanks!for playing</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="bot-ai.js"></script>
+</body>
+</html>

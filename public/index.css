@@ -1,0 +1,159 @@
+*{
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 62, 62);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+header,main,footer{
+    width: 100%;
+    height: auto;
+    line-height: 150%;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+header{
+    height: 20%;
+}
+main{
+    height: 70%;
+}
+footer{
+    height: 10%;
+}
+header h1{
+    margin: 20px ;
+    font-size: 40px;
+}
+main #timer{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(77, 74, 74);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#timer h2{
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(77, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timer #time{
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-div{
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "1 2 3"
+                         "4 5 6"
+                         "7 8 9";
+}
+#main-div div{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 5px;
+    color: grey;
+    background: linear-gradient(to bottom,grey,rgb(77, 74, 74));
+    font-size: 40px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-div:nth-child(1){
+    grid-area: 1;
+}
+#main-div:nth-child(2){
+    grid-area: 2;
+}
+#main-div:nth-child(3){
+    grid-area: 3;
+}
+#main-div:nth-child(4){
+    grid-area: 4;
+}
+#main-div:nth-child(5){
+    grid-area: 5;
+}
+#main-div:nth-child(6){
+    grid-area: 6;
+}
+#main-div:nth-child(7){
+    grid-area: 7;
+}
+#main-div:nth-child(8){
+    grid-area: 8;
+}
+#main-div:nth-child(9){
+    grid-area: 9;
+} 
+
+main #button{
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    background-color: rgb(151, 243, 59);
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out linear;
+}
+#button:hover{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
